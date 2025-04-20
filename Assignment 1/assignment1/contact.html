@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata including character set, viewport for responsiveness, author information, and linked stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saleha Qareen">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Contact</title> <!-- Title of the webpage that appears on the browser tab -->
+</head>
+
+<body>
+    <header>
+        <!-- Main heading and navigation menu for different sections of the website -->
+        <h1>Saleha Qareen</h1>
+        <nav>
+            <ul class="header-links">
+                <!-- Navigation links to Home, Resume, Projects, and Contact pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact form and contact information section -->
+        <section>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h2>Contact Us</h2>
+                    <!-- Contact form allowing users to input their name, email, subject, and message -->
+                    <form id="contactForm" action="#" method="POST">
+                        <!-- Name Field -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <!-- Email Field -->
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                        <!-- Subject Field -->
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required minlength="5" maxlength="50">
+                        <!-- Message Field -->
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required minlength="10" maxlength="500"></textarea>
+                        <!-- Submit Button -->
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- Contact Information section displaying name, email, and phone number -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <p>Saleha Qareen</p>
+                    </div>
+                    <div class="info-item">
+                        <p>salehaqareen@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <p>(613) 123-1234</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer section with external links to LinkedIn and GitHub profiles -->
+        <div class="footer-links">
+            <a href="www.linkedin.com/in/saleha-qareen" target="_blank">LinkedIn</a> |
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+        <p class="footer-author">&copy; Saleha Qareen</p>
+    </footer>
+</body>
+
+</html>

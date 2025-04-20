@@ -1,0 +1,448 @@
+html,
+body {
+    height: 100%;
+    /* Ensures the body and html elements take up the full height of the browser window */
+    margin: 0;
+    /* Removes default margin */
+}
+
+main {
+    flex: 1;
+    /* Allows main content to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    /* Arranges the content vertically */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategrey;
+    /* Sets background color for the header */
+    color: whitesmoke;
+    /* Sets text color for the header */
+    padding: 10px;
+    /* Adds padding inside the header */
+}
+
+.header-links {
+    display: flex;
+    /* Makes the navigation links in the header display in a row */
+    list-style-type: none;
+    /* Removes default bullet points */
+    padding: 0px;
+    /* Removes padding */
+    gap: 30px;
+    /* Adds space between each link */
+}
+
+.header-links a,
+.footer-links a {
+    text-decoration: none;
+    /* Removes underline from the links */
+    color: whitesmoke;
+    /* Sets the link text color */
+}
+
+.header-links a:hover,
+.footer-links a:hover {
+    color: gold;
+    /* Changes color to gold when hovering over links */
+    text-decoration: underline;
+    /* Adds underline to links when hovered */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+    /* Sets background color for footer */
+    color: whitesmoke;
+    /* Sets text color for footer */
+    padding: 10px;
+    /* Adds padding to the footer */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    /* Centers the links horizontally */
+    gap: 10px;
+    /* Adds space between the footer links */
+    text-decoration: none;
+    /* Removes text decoration from links */
+}
+
+.footer-author {
+    text-align: right;
+    /* Aligns the text to the right in the footer */
+    margin: 0px;
+    /* Removes default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Ensures the body contents are in a column layout */
+    background-color: #c8e3ca;
+    /* Sets background color */
+    font-family: 'Arial', sans-serif;
+    /* Defines the font style */
+    line-height: 1.6;
+    /* Sets the line spacing */
+}
+
+section {
+    padding: 20px 10px;
+    /* Adds padding inside each section */
+}
+
+.card {
+    padding: 20px;
+    /* Adds padding inside cards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow to the card for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Smooth animation on hover */
+    background-color: whitesmoke;
+    /* Sets background color for the card */
+}
+
+#profile-image {
+    border-radius: 50%;
+    /* Makes the profile image circular */
+    border: 3px solid whitesmoke;
+    /* Adds a white border around the image */
+}
+
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    /* Arranges content vertically */
+    align-items: center;
+    /* Centers the items horizontally */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Moves the card up slightly on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* Increases shadow on hover for emphasis */
+}
+
+.card h3 {
+    color: #2C3E50;
+    /* Sets the color of the card's header */
+    margin-bottom: 15px;
+    /* Adds space below the header */
+}
+
+.card p {
+    color: #4A4A4A;
+    /* Sets the color of the paragraph text */
+}
+
+.card-container {
+    display: grid;
+    /* Uses grid layout for card positioning */
+    gap: 20px;
+    /* Adds space between grid items */
+}
+
+.intro-card-container,
+.work-card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Defines 3 equal columns for the grid */
+}
+
+.education-card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Defines 4 equal columns for the grid */
+}
+
+.skill-card-container {
+    grid-template-columns: 1fr 1fr;
+    /* Defines 2 equal columns for the grid */
+}
+
+.summary-card-container {
+    grid-template-columns: 3fr 1fr;
+    /* Defines 2 unequal columns with 3:1 ratio */
+}
+
+.project-card-container {
+    grid-template-columns: 1fr 1fr;
+    /* Defines 1 column for the grid */
+}
+
+.project-img {
+    border: 3px solid whitesmoke;
+    /* Adds a white border around the image */
+    width: 100%;
+    /* Sets the width of the project image */
+}
+
+.timer-stop-watch-img {
+    border: 3px solid whitesmoke;
+    /* Adds a white border around the image */
+}
+
+.proj-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Arranges project card content in a row */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    /* Arranges content vertically */
+    padding-right: 10px;
+    /* Adds padding to the right side */
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    /* Arranges images in a row */
+}
+
+/* Styles for Contact page */
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    /* Arranges contact form and info side by side */
+    justify-content: center;
+    /* Centers the contact section horizontally */
+    margin-top: 40px;
+    /* Adds margin to the top */
+}
+
+.contact-card {
+    max-width: 500px;
+    /* Sets maximum width of the contact form */
+    padding: 20px;
+    /* Adds padding inside the contact form */
+    background-color: #ffffff;
+    /* Sets background color for the contact form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds shadow around the form */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    /* Arranges contact info vertically */
+    padding: 20px;
+    /* Adds padding inside the contact info section */
+    background-color: darkslategray;
+    /* Sets background color */
+    color: white;
+    /* Sets text color */
+}
+
+.info-item p {
+    font-size: 18px;
+    /* Sets the font size */
+    margin: 2px 0;
+    /* Adds margin above and below the text */
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    /* Arranges the form fields vertically */
+}
+
+#contactForm label {
+    margin-bottom: 5px;
+    /* Adds space below the label */
+    font-weight: bold;
+    /* Makes the label text bold */
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    /* Adds padding inside the input fields */
+    margin-bottom: 15px;
+    /* Adds margin below each input field */
+    border: 1px solid #ccc;
+    /* Adds a gray border */
+    border-radius: 5px;
+    /* Rounds the corners */
+    font-size: 14px;
+    /* Sets the font size */
+}
+
+#contactForm button {
+    padding: 10px;
+    /* Adds padding inside the button */
+    background-color: darkslategray;
+    /* Sets the button background color */
+    color: #ffffff;
+    /* Sets the button text color */
+    border: none;
+    /* Removes the border */
+    border-radius: 5px;
+    /* Rounds the button corners */
+    font-size: 16px;
+    /* Sets the font size */
+    cursor: pointer;
+    /* Changes the cursor to pointer on hover */
+}
+
+#contactForm button:hover {
+    background-color: rgb(58, 97, 97);
+    /* Changes background color on hover */
+}
+
+/* Responsive Design for Mobile: Maximum width of 600px */
+@media screen and (max-width: 600px) {
+
+    .intro-card-container,
+    .work-card-container,
+    .education-card-container,
+    .summary-card-container,
+    .skill-card-container {
+        grid-template-columns: 1fr;
+        /* Makes the grid layout single-column */
+    }
+
+    #profile-image {
+        width: 40%;
+        /* Sets the profile image width */
+    }
+
+    .project-img {
+        width: 20%;
+        /* Sets the project image width */
+    }
+
+    .header-links {
+        flex-direction: column;
+        /* Changes header links to column layout */
+        align-items: center;
+        /* Centers the links */
+        gap: 10px;
+        /* Reduces the gap between links */
+    }
+
+    .project-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-card,
+    .proj-card-timmer {
+        display: flex;
+        flex-direction: column;
+        /* Changes project card layout to vertical */
+    }
+
+    .project-img,
+    .timer-stop-watch-img {
+        width: 100%;
+        /* Makes the image take full width */
+    }
+
+    .img-container {
+        flex-direction: column;
+        /* Changes image container to vertical layout */
+    }
+
+    .contact-container {
+        flex-direction: column-reverse;
+        /* Stacks the contact form and info vertically */
+    }
+}
+
+/* Responsive Design for Tablet: Width between 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .intro-card-container,
+    .education-card-container,
+    .work-card-container {
+        grid-template-columns: 1fr 1fr;
+        /* Creates two columns for the grid */
+    }
+
+    .summary-card-container {
+        grid-template-columns: 1fr;
+        /* Makes the summary single-column */
+    }
+
+    .intro-card-container .card:nth-child(1),
+    .intro-card-container .card:nth-child(4),
+    .work-card-container .card:nth-child(3) {
+        grid-column: 1 / -1;
+        /* Makes certain cards span across all columns */
+    }
+
+    #profile-image {
+        width: 20%;
+        /* Sets profile image width */
+    }
+
+    .project-img {
+        width: 100%;
+        /* Makes the project image full width */
+    }
+
+    .timer-stop-watch-img {
+        width: 49%;
+        /* Sets the stopwatch image width */
+    }
+
+    .project-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-card,
+    .proj-card-timmer {
+        display: flex;
+        flex-direction: column;
+        /* Changes project card layout to vertical */
+    }
+
+    .contact-card {
+        width: 60%;
+        /* Sets width of the contact form */
+    }
+}
+
+/* Responsive Design for Desktop: Width above 1024px */
+@media screen and (min-width: 1025px) {
+    .intro-card-container .card:nth-child(1),
+    .project-card-container .card:nth-child(3) {
+        grid-column: 1 / -1;
+        /* Makes the intro card span across all columns */
+    }
+
+    #profile-image {
+        width: 10%;
+        /* Sets profile image width */
+    }
+
+    .project-img {
+        height: 100%;
+    }
+
+    .proj-card-timmer {
+        display: flex;
+        flex-direction: column;
+        /* Changes project timer card layout to vertical */
+    }
+
+    .timer-stop-watch-img {
+        width: 49%;
+        /* Sets timer image width */
+    }
+
+    .contact-card {
+        width: 100%;
+        /* Sets full width for the contact form */
+    }
+}
